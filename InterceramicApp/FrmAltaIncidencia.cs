@@ -28,7 +28,11 @@ namespace InterceramicApp
         }      
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+=======
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+>>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (txtDescripcion.Text == ""|| txtDispositivo.Text == "")
@@ -127,7 +131,11 @@ namespace InterceramicApp
         private void cmbUsuario_SelectedIndexChanged(object sender, EventArgs e)
         {
             string clave = cmbUsuario.SelectedItem.ToString();
+<<<<<<< HEAD
             string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+=======
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+>>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -175,7 +183,11 @@ namespace InterceramicApp
         public void cargaUsuario()
         {
             string clave = cmbUsuario.SelectedText.ToString();
+<<<<<<< HEAD
             string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+=======
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+>>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -223,7 +235,11 @@ namespace InterceramicApp
         public void CargaEquipo()
         {
             string departamento = txtDepartamento.Text.ToString(); 
+<<<<<<< HEAD
             string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+=======
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+>>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -292,11 +308,14 @@ namespace InterceramicApp
         {
 
         }
+<<<<<<< HEAD
 
         private void mcFecha_DateChanged(object sender, DateRangeEventArgs e)
         {
 
         }
+=======
+>>>>>>> master
     }
        
     }

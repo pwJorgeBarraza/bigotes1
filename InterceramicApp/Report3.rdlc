@@ -40,7 +40,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
+<<<<<<< HEAD
                               <Value>Clave</Value>
+=======
+                              <Value>Clave De Usuario</Value>
+>>>>>>> master
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>11pt</FontSize>
@@ -560,7 +564,11 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>1.2cm</Height>
+<<<<<<< HEAD
         <Width>23.09562cm</Width>
+=======
+        <Width>23.09563cm</Width>
+>>>>>>> master
         <Style>
           <Border>
             <Style>None</Style>

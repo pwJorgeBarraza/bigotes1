@@ -89,6 +89,7 @@ namespace InterceramicApp
             frmDiagnostico di = new frmDiagnostico();
             di.Show();
         }
+<<<<<<< HEAD
 
         private void incidenciasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -107,5 +108,7 @@ namespace InterceramicApp
             frmEvaluacion eva = new frmEvaluacion();
             eva.Show();
         }
+=======
+>>>>>>> master
     }
 }

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+<<<<<<< HEAD
             this.incidenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.InterceramicDataSet = new InterceramicApp.InterceramicDataSet();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -48,18 +49,45 @@
             this.InterceramicDataSet.DataSetName = "InterceramicDataSet";
             this.InterceramicDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+=======
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.InterceramicDataSet = new InterceramicApp.InterceramicDataSet();
+            this.incidenciasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.incidenciasTableAdapter = new InterceramicApp.InterceramicDataSetTableAdapters.incidenciasTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.InterceramicDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incidenciasBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+>>>>>>> master
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.incidenciasBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+<<<<<<< HEAD
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "InterceramicApp.Report1.rdlc";
+=======
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "InterceramicApp.Report2.rdlc";
+>>>>>>> master
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(755, 402);
             this.reportViewer1.TabIndex = 0;
             // 
+<<<<<<< HEAD
+=======
+            // InterceramicDataSet
+            // 
+            this.InterceramicDataSet.DataSetName = "InterceramicDataSet";
+            this.InterceramicDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // incidenciasBindingSource
+            // 
+            this.incidenciasBindingSource.DataMember = "incidencias";
+            this.incidenciasBindingSource.DataSource = this.InterceramicDataSet;
+            // 
+>>>>>>> master
             // incidenciasTableAdapter
             // 
             this.incidenciasTableAdapter.ClearBeforeFill = true;
@@ -73,8 +101,13 @@
             this.Name = "frmMostrarIncidencias";
             this.Text = "frmMostrarIncidencias";
             this.Load += new System.EventHandler(this.frmMostrarIncidencias_Load);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.incidenciasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InterceramicDataSet)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.InterceramicDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incidenciasBindingSource)).EndInit();
+>>>>>>> master
             this.ResumeLayout(false);
 
         }

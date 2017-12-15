@@ -59,12 +59,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmAltaCatalogo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAltaCatalogo.Designer.cs">
       <DependentUpon>frmAltaCatalogo.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> master
     <Compile Include="frmAltaEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,12 +104,15 @@
     <Compile Include="frmDiagnostico.Designer.cs">
       <DependentUpon>frmDiagnostico.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmEvaluacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmEvaluacion.Designer.cs">
       <DependentUpon>frmEvaluacion.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> master
     <Compile Include="frmEvaluar tecnico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,7 @@
     <Compile Include="frmLiberarIncidencia.Designer.cs">
       <DependentUpon>frmLiberarIncidencia.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmMostrarIncidencias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +137,19 @@
     </Compile>
     <Compile Include="frmMuestraCatalogo.Designer.cs">
       <DependentUpon>frmMuestraCatalogo.cs</DependentUpon>
+=======
+    <Compile Include="frmMenuUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuUsuario.Designer.cs">
+      <DependentUpon>frmMenuUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarIncidencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarIncidencias.Designer.cs">
+      <DependentUpon>frmMostrarIncidencias.cs</DependentUpon>
+>>>>>>> master
     </Compile>
     <Compile Include="frmRFC.cs">
       <SubType>Form</SubType>
@@ -148,6 +168,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>InterceramicDataSet1.xsd</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="InterceramicDataSet2.cs">
       <DependentUpon>InterceramicDataSet2.xsd</DependentUpon>
     </Compile>
@@ -156,6 +177,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>InterceramicDataSet2.xsd</DependentUpon>
     </Compile>
+=======
+>>>>>>> master
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,9 +191,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmAltaCatalogo.resx">
       <DependentUpon>frmAltaCatalogo.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> master
     <EmbeddedResource Include="frmAltaEquipo.resx">
       <DependentUpon>frmAltaEquipo.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,21 +215,33 @@
     <EmbeddedResource Include="frmDiagnostico.resx">
       <DependentUpon>frmDiagnostico.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmEvaluacion.resx">
       <DependentUpon>frmEvaluacion.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> master
     <EmbeddedResource Include="frmEvaluar tecnico.resx">
       <DependentUpon>frmEvaluar tecnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLiberarIncidencia.resx">
       <DependentUpon>frmLiberarIncidencia.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmMostrarIncidencias.resx">
       <DependentUpon>frmMostrarIncidencias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMuestraCatalogo.resx">
       <DependentUpon>frmMuestraCatalogo.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <EmbeddedResource Include="frmMenuUsuario.resx">
+      <DependentUpon>frmMenuUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarIncidencias.resx">
+      <DependentUpon>frmMostrarIncidencias.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> master
     <EmbeddedResource Include="frmRFC.resx">
       <DependentUpon>frmRFC.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,8 +261,11 @@
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Report3.rdlc" />
+<<<<<<< HEAD
     <EmbeddedResource Include="Report4.rdlc" />
     <EmbeddedResource Include="Report5.rdlc" />
+=======
+>>>>>>> master
     <None Include="InterceramicDataSet.xsc">
       <DependentUpon>InterceramicDataSet.xsd</DependentUpon>
     </None>
@@ -247,6 +288,7 @@
     <None Include="InterceramicDataSet1.xss">
       <DependentUpon>InterceramicDataSet1.xsd</DependentUpon>
     </None>
+<<<<<<< HEAD
     <None Include="InterceramicDataSet2.xsc">
       <DependentUpon>InterceramicDataSet2.xsd</DependentUpon>
     </None>
@@ -258,6 +300,8 @@
     <None Include="InterceramicDataSet2.xss">
       <DependentUpon>InterceramicDataSet2.xsd</DependentUpon>
     </None>
+=======
+>>>>>>> master
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

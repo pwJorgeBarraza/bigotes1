@@ -33,11 +33,16 @@
             this.incidenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tecnicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.equipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.catalogoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asignarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incidenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagnosticarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incidenciaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+=======
+            this.asignarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.incidenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> master
             this.liberarIncidenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incidenciaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,14 +56,22 @@
             this.tecnicosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.administradoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.catalogoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incidenciasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+=======
+>>>>>>> master
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.solicitudesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deCambioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+<<<<<<< HEAD
             this.evaluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incidenciaToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+=======
+            this.diagnosticarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.incidenciaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+>>>>>>> master
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,8 +88,12 @@
             this.consultasToolStripMenuItem,
             this.toolStripMenuItem1,
             this.solicitudesToolStripMenuItem,
+<<<<<<< HEAD
             this.acercaDeToolStripMenuItem,
             this.evaluarToolStripMenuItem});
+=======
+            this.acercaDeToolStripMenuItem});
+>>>>>>> master
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1001, 24);
@@ -88,8 +105,12 @@
             this.altasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.incidenciasToolStripMenuItem,
             this.tecnicosToolStripMenuItem,
+<<<<<<< HEAD
             this.equipoToolStripMenuItem,
             this.catalogoToolStripMenuItem1});
+=======
+            this.equipoToolStripMenuItem});
+>>>>>>> master
             this.altasToolStripMenuItem.Name = "altasToolStripMenuItem";
             this.altasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.altasToolStripMenuItem.Text = "Alta";
@@ -115,6 +136,7 @@
             this.equipoToolStripMenuItem.Text = "Equipo";
             this.equipoToolStripMenuItem.Click += new System.EventHandler(this.equipoToolStripMenuItem_Click);
             // 
+<<<<<<< HEAD
             // catalogoToolStripMenuItem1
             // 
             this.catalogoToolStripMenuItem1.Name = "catalogoToolStripMenuItem1";
@@ -122,6 +144,8 @@
             this.catalogoToolStripMenuItem1.Text = "Catalogo";
             this.catalogoToolStripMenuItem1.Click += new System.EventHandler(this.catalogoToolStripMenuItem1_Click);
             // 
+=======
+>>>>>>> master
             // asignarToolStripMenuItem
             // 
             this.asignarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -137,6 +161,7 @@
             this.incidenciaToolStripMenuItem.Text = "Incidencia";
             this.incidenciaToolStripMenuItem.Click += new System.EventHandler(this.incidenciaToolStripMenuItem_Click);
             // 
+<<<<<<< HEAD
             // diagnosticarToolStripMenuItem
             // 
             this.diagnosticarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -152,6 +177,8 @@
             this.incidenciaToolStripMenuItem2.Text = "Incidencia";
             this.incidenciaToolStripMenuItem2.Click += new System.EventHandler(this.incidenciaToolStripMenuItem2_Click);
             // 
+=======
+>>>>>>> master
             // liberarIncidenciaToolStripMenuItem
             // 
             this.liberarIncidenciaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -171,8 +198,12 @@
             // 
             this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.porMesToolStripMenuItem,
+<<<<<<< HEAD
             this.porAñoToolStripMenuItem,
             this.catalogoToolStripMenuItem});
+=======
+            this.porAñoToolStripMenuItem});
+>>>>>>> master
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
             this.consultasToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
             this.consultasToolStripMenuItem.Text = "Consultar";
@@ -250,6 +281,7 @@
             this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
+<<<<<<< HEAD
             // catalogoToolStripMenuItem
             // 
             this.catalogoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -265,6 +297,8 @@
             this.incidenciasToolStripMenuItem1.Text = "Incidencias";
             this.incidenciasToolStripMenuItem1.Click += new System.EventHandler(this.incidenciasToolStripMenuItem1_Click);
             // 
+=======
+>>>>>>> master
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -292,6 +326,7 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.acercaDeToolStripMenuItem.Text = "Acerca De";
             // 
+<<<<<<< HEAD
             // evaluarToolStripMenuItem
             // 
             this.evaluarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -306,6 +341,22 @@
             this.incidenciaToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.incidenciaToolStripMenuItem3.Text = "Incidencia";
             this.incidenciaToolStripMenuItem3.Click += new System.EventHandler(this.incidenciaToolStripMenuItem3_Click);
+=======
+            // diagnosticarToolStripMenuItem
+            // 
+            this.diagnosticarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.incidenciaToolStripMenuItem2});
+            this.diagnosticarToolStripMenuItem.Name = "diagnosticarToolStripMenuItem";
+            this.diagnosticarToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.diagnosticarToolStripMenuItem.Text = "Diagnosticar";
+            // 
+            // incidenciaToolStripMenuItem2
+            // 
+            this.incidenciaToolStripMenuItem2.Name = "incidenciaToolStripMenuItem2";
+            this.incidenciaToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.incidenciaToolStripMenuItem2.Text = "Incidencia";
+            this.incidenciaToolStripMenuItem2.Click += new System.EventHandler(this.incidenciaToolStripMenuItem2_Click);
+>>>>>>> master
             // 
             // Menu
             // 
@@ -354,10 +405,13 @@
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diagnosticarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem incidenciaToolStripMenuItem2;
+<<<<<<< HEAD
         private System.Windows.Forms.ToolStripMenuItem catalogoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem incidenciasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem catalogoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem evaluarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem incidenciaToolStripMenuItem3;
+=======
+>>>>>>> master
     }
 }

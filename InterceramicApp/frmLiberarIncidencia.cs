@@ -20,8 +20,13 @@ namespace InterceramicApp
 
         private void cmbClave_SelectedIndexChanged(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             string clave = cmbClave.Text.ToString();
             string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+=======
+            string clave = cmbClave.SelectedItem.ToString();
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+>>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -38,7 +43,11 @@ namespace InterceramicApp
                 return;
             }
             SqlDataReader lector = null;
+<<<<<<< HEAD
             string strComando = "select usuario, descripcion from incidencias WHERE incidenciaID= '" + clave + "'";
+=======
+            string strComando = "select usuario, descripcion from incidencias WHERE incidenciaID= '" + clave+"'";
+>>>>>>> master
             SqlCommand cmd = new SqlCommand(strComando, conn);
             try
             {
@@ -61,8 +70,13 @@ namespace InterceramicApp
                 while (lector.Read())
                 {
                     txtTecnico.Text = lector.GetValue(0).ToString();
+<<<<<<< HEAD
                     txtDescripcion.Text = lector.GetValue(1).ToString();
 
+=======
+                   txtDescripcion.Text = lector.GetValue(1).ToString();
+                    
+>>>>>>> master
                 }
             }
             conn.Close();
@@ -70,8 +84,15 @@ namespace InterceramicApp
 
         private void frmLiberarIncidencia_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             string clave = cmbClave.SelectedIndex.ToString();
             string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+=======
+
+            string clave = cmbClave.SelectedText.ToString();
+
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+>>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (conn == null)
@@ -100,6 +121,7 @@ namespace InterceramicApp
         {
             this.Close();
         }
+<<<<<<< HEAD
 
         private void btnLiberar_Click(object sender, EventArgs e)
         {
@@ -145,5 +167,7 @@ namespace InterceramicApp
             txtTecnico.Text = "";
             cmbClave.SelectedIndex = -1;
         }
+=======
+>>>>>>> master
     }
 }

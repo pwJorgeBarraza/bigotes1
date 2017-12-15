@@ -112,6 +112,7 @@
             this.rdAprobado.TabStop = true;
             this.rdAprobado.Text = "Aprobado";
             this.rdAprobado.UseVisualStyleBackColor = true;
+            this.rdAprobado.CheckedChanged += new System.EventHandler(this.rdAprobado_CheckedChanged);
             // 
             // txtJustificacion
             // 

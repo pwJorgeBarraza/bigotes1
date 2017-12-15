@@ -90,7 +90,7 @@ namespace InterceramicApp
                 {
                     estatus = "RECHAZADO";
                 }
-
+               
 
                 string strComando = "update rfc set estatus=@estatus,  justificacion=@justificacion where rfcId='" + cmbClave.Text.ToString() + "'";
                 SqlCommand cmd = new SqlCommand(strComando, conn);
@@ -137,6 +137,16 @@ namespace InterceramicApp
                 }
             }
             conn.Close();
+        }
+
+        private void rdAprobado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdAprobado.Checked)
+            {
+                ActualizarEquipo ac = new ActualizarEquipo();
+                ac.Show();
+
+            }
         }
     }
 }

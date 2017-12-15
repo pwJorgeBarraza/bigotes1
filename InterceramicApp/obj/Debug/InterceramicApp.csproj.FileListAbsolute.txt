@@ -148,4 +148,4 @@ C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\RdlCompil
 C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.exe
 C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.pdb
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmCab.resources
-C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.csprojResolveAssemblyReference.cache
+C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.ActualizarEquipo.resources

@@ -89,6 +89,12 @@
     <Compile Include="frmAsignarIncidencia.Designer.cs">
       <DependentUpon>frmAsignarIncidencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCab.Designer.cs">
+      <DependentUpon>frmCab.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultaUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,12 +112,6 @@
     </Compile>
     <Compile Include="frmEvaluacion.Designer.cs">
       <DependentUpon>frmEvaluacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEvaluar tecnico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEvaluar tecnico.Designer.cs">
-      <DependentUpon>frmEvaluar tecnico.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLiberarIncidencia.cs">
       <SubType>Form</SubType>
@@ -183,6 +183,9 @@
     <EmbeddedResource Include="frmAsignarIncidencia.resx">
       <DependentUpon>frmAsignarIncidencia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCab.resx">
+      <DependentUpon>frmCab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaUsuarios.resx">
       <DependentUpon>frmConsultaUsuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,9 +194,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEvaluacion.resx">
       <DependentUpon>frmEvaluacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEvaluar tecnico.resx">
-      <DependentUpon>frmEvaluar tecnico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLiberarIncidencia.resx">
       <DependentUpon>frmLiberarIncidencia.cs</DependentUpon>

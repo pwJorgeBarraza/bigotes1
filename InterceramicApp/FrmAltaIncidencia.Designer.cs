@@ -72,6 +72,7 @@
             this.rdHardware.TabStop = true;
             this.rdHardware.Text = "Hardware";
             this.rdHardware.UseVisualStyleBackColor = true;
+            this.rdHardware.CheckedChanged += new System.EventHandler(this.rdHardware_CheckedChanged);
             // 
             // rdSoftware
             // 

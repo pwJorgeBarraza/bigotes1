@@ -21,7 +21,7 @@ namespace InterceramicApp
         private void cmbClave_SelectedIndexChanged(object sender, EventArgs e)
         {
             string clave = cmbClave.Text.ToString();
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -55,17 +55,19 @@ namespace InterceramicApp
                 conn.Close();
                 return;
             }
-
+           
             if (lector.HasRows)
             {
                 while (lector.Read())
                 {
+
                     txtUsuario.Text = lector.GetValue(0).ToString();
                     txtTecnico.Text = lector.GetValue(1).ToString();
                     txtDescripcion.Text = lector.GetValue(2).ToString();
                     txtFechaI.Text = lector.GetValue(3).ToString();
                     txtFechaF.Text = lector.GetValue(4).ToString();
                     txtTiempo.Text = lector.GetValue(5).ToString();
+                   
                 }
             }
             conn.Close();
@@ -74,7 +76,7 @@ namespace InterceramicApp
         private void frmEvaluacion_Load(object sender, EventArgs e)
         {
             string clave = cmbClave.SelectedIndex.ToString();
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (conn == null)
@@ -107,10 +109,10 @@ namespace InterceramicApp
         private void btnEvaluar_Click(object sender, EventArgs e)
         {
             string clave = cmbClave.SelectedText.ToString();
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
-            if (cmbClave.SelectedIndex < 0 || txtDescripcion.Text == "" || txtTecnico.Text == "" || txtFechaF.Text == "" | txtFechaI.Text == "" || txtTiempo.Text == "" || txtTiempoR.Text == "" || txtUsuario.Text == "")
+            if (cmbClave.SelectedIndex < 0 || txtDescripcion.Text == "" || txtTecnico.Text == "" || txtFechaF.Text == "" | txtFechaI.Text == "" || txtTiempo.Text == "" /*|| txtTiempoR.Text == ""*/ || txtUsuario.Text == "")
             {
                 MessageBox.Show("HAY ALGUN CAMPO VACÍO", "EXCLAMACIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -119,25 +121,16 @@ namespace InterceramicApp
             {
                 DateTime fechaI = Convert.ToDateTime(txtFechaI.Text);
                 DateTime fechaF = Convert.ToDateTime(txtFechaF.Text);
+                TimeSpan tiempor = fechaF.Subtract(fechaI);
+                txtTiempoR.Text+=tiempor.Days;
+                          
+
                 int evaluacion=0;
-                if (rdBueno.Checked && rdSi2.Checked && rdAtento.Checked)
+                if (rdBueno.Checked)
                 { evaluacion = 10; }
-                if (rdBueno.Checked && rdSi2.Checked && rdGrosero.Checked)
-                { evaluacion = 7; }
-                if (rdBueno.Checked && rdNo2.Checked && rdAtento.Checked)
-                { evaluacion = 8; }
-                if (rdBueno.Checked && rdNo2.Checked && rdGrosero.Checked)
+                if (rdMalo.Checked)
                 { evaluacion = 5; }
-                if (rdMalo.Checked && rdSi2.Checked && rdAtento.Checked)
-                { evaluacion = 7; }
-                if (rdMalo.Checked && rdSi2.Checked && rdGrosero.Checked)
-                { evaluacion = 6; }
-                if (rdMalo.Checked && rdNo2.Checked && rdAtento.Checked)
-                { evaluacion = 7; }
-                if (rdMalo.Checked && rdNo2.Checked && rdGrosero.Checked)
-                { evaluacion = 0; }
-                TimeSpan tiempoR = fechaF.Subtract(fechaF);
-                txtTiempoR.Text = tiempoR.Days.ToString();
+
                 string strComando = "update incidencias set evaluacion=@evaluacion where incidenciaID='" + clave + "'";
                 SqlCommand cmd = new SqlCommand(strComando, conn);
                 cmd.Parameters.AddWithValue("@evaluacion", evaluacion);
@@ -149,7 +142,7 @@ namespace InterceramicApp
                 {
                     MessageBox.Show(ex.Message);
                 }
-                MessageBox.Show("INCIDENCIA LIBERADA", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("INCIDENCIA EVALUADA", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 conn.Close();
                 limpiar();
             }

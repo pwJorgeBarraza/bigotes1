@@ -16,69 +16,46 @@ namespace InterceramicApp
         public frmRFC()
         {
             InitializeComponent();
-            cargaUsuario();
+            
+            carga();
+            cargaDepartamento();
         }
 
         private void frmRFC_Load(object sender, EventArgs e)
         {
-
-        }
-       
-           
-        
-        public void cargaUsuario()
-        {
-            string clave = cmbUsuario.SelectedText.ToString();
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string clave = cmbClave.SelectedIndex.ToString();
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-            SqlConnection conn = new SqlConnection(strCon);
-            try
+            SqlConnection conn = UsoDB.ConectaBD(strCon);
+            if (conn == null)
             {
-                conn.Open();
+                MessageBox.Show("Imposible Conectar");
             }
-            catch (SqlException ex)
+            string strcomand = "select incidenciaID From incidencias where estatus ='ASIGNADA'";
+            SqlDataReader Lector = UsoDB.Consulta(strcomand, conn);
+            if (Lector == null)
             {
-                MessageBox.Show("Imposible conectar con los datos");
-                foreach (SqlError err in ex.Errors)
-                {
-                    MessageBox.Show(err.Message);
-                }
-                return;
-            }
-            SqlDataReader lector = null;
-            string strComando = "SELECT nombre from Usuarios where tipo='U'";
-            SqlCommand cmd = new SqlCommand(strComando, conn);
-            try
-            {
-                lector = cmd.ExecuteReader();
-
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show("Error en consulta 2");
-                foreach (SqlError err in ex.Errors)
-                {
-                    MessageBox.Show(err.Message);
-                }
+                MessageBox.Show("Error en la Consulta");
                 conn.Close();
                 return;
             }
-
-            if (lector.HasRows)
+            if (Lector.HasRows)
             {
-                while (lector.Read())
+                while (Lector.Read())
                 {
-
-                    cmbUsuario.Items.Add(lector.GetValue(0).ToString());
+                    cmbClave.Items.Add(Lector.GetValue(0).ToString());
                 }
             }
             conn.Close();
         }
 
+
+
+      
         private void cmbUsuario_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string clave = cmbUsuario.SelectedItem.ToString();
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string clave = cmbClave.Text.ToString();
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -95,7 +72,7 @@ namespace InterceramicApp
                 return;
             }
             SqlDataReader lector = null;
-            string strComando = "SELECT departamento from Usuarios where nombre = '" + clave + "'";
+            string strComando = "SELECT departamento from incidencias WHERE incidenciaID ='" + clave + "'";
             SqlCommand cmd = new SqlCommand(strComando, conn);
             try
             {
@@ -117,8 +94,7 @@ namespace InterceramicApp
             {
                 while (lector.Read())
                 {
-
-                    txtDepartamento.Text = lector.GetValue(0).ToString();
+                    cmbDepartamento.Items.Add(lector.GetValue(0).ToString());
                 }
             }
             conn.Close();
@@ -126,29 +102,33 @@ namespace InterceramicApp
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-     
-        string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+                    string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
         //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
         SqlConnection conn = UsoDB.ConectaBD(strCon);
-            if (txtDepartamento.Text == "" || cmbUsuario.SelectedIndex <= 0 ||txtFecha.Text == "" || txtDescripcion.Text == "")
+            if (cmbDepartamento.Text == "" || cmbUsuario.SelectedIndex == -1 ||txtFecha.Text == "" || txtDescripcion.Text == "")
 
             {
                 MessageBox.Show("Datos vacios", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
-                string usuario = cmbUsuario.SelectedText.ToString();
-                string departamento = txtDepartamento.Text;
+              
                 string fecha = txtFecha.Text;
                 string descripcion = txtDescripcion.Text;
-    
-                string strComando = "insert into rfc (nombre, descripcion, fecha, departamento)";
-                 strComando += "values (@nombre, @descripcion, @fecha, @departamento)";
+                string estatus = "";
+                if (btnEnviar.Enabled == true)
+                {
+                    estatus = "RECIBIDO";
+                }
+                string strComando = "insert into rfc (nombre, descripcion, fecha, nomDepartamento,dispositivo,estatus)";
+                 strComando += "values (@nombre, @descripcion, @fecha, @nomDepartamento,@dispositivo,@estatus)";
                 SqlCommand cmd = new SqlCommand(strComando, conn);
-                 cmd.Parameters.AddWithValue("@fecha",fecha);
-                cmd.Parameters.AddWithValue("@departamento", departamento);
-                cmd.Parameters.AddWithValue("@usuario", usuario);
+                cmd.Parameters.AddWithValue("@nomDepartamento", cmbDepartamento.Text);
+                cmd.Parameters.AddWithValue("@nombre", cmbUsuario.Text);
                 cmd.Parameters.AddWithValue("@descripcion", descripcion);
+                cmd.Parameters.AddWithValue("@fecha", fecha);
+                cmd.Parameters.AddWithValue("@dispositivo", cmbDispositivo.Text);
+                cmd.Parameters.AddWithValue("@estatus", estatus);
                 try
                 {
                     cmd.ExecuteNonQuery();
@@ -157,7 +137,7 @@ namespace InterceramicApp
                 {
                     MessageBox.Show(ex.Message);
                 }
-                MessageBox.Show("EQUIPO REGISTRADO", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("SOLICITUD ENVIADA", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 conn.Close();
                 Limpiar();
 
@@ -166,7 +146,7 @@ namespace InterceramicApp
         }
         public void Limpiar()
 {
-            txtDepartamento.Text = "";
+            cmbDepartamento.SelectedIndex=-1;
             cmbUsuario.SelectedIndex = -1;
             txtDescripcion.Text = "";
             txtFecha.Text = "";
@@ -184,5 +164,114 @@ namespace InterceramicApp
         {
             this.Close();
         }
+
+        private void cmbDispositivo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+     
+        }
+        public void cargaDepartamento()
+        {
+           
+        }
+
+        private void cmbClave_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string clave = cmbClave.Text.ToString();
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(strCon);
+            try
+            {
+                conn.Open();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Imposible conectar con los datos");
+                foreach (SqlError err in ex.Errors)
+                {
+                    MessageBox.Show(err.Message);
+                }
+                return;
+            }
+            SqlDataReader lector = null;
+            string strComando = "SELECT tecnico from incidencias WHERE incidenciaID ='" + clave + "'";
+            SqlCommand cmd = new SqlCommand(strComando, conn);
+            try
+            {
+                lector = cmd.ExecuteReader();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Error en consulta");
+                foreach (SqlError err in ex.Errors)
+                {
+                    MessageBox.Show(err.Message);
+                }
+                conn.Close();
+                return;
+            }
+
+            if (lector.HasRows)
+            {
+                while (lector.Read())
+                {
+                    cmbUsuario.Items.Add(lector.GetValue(0).ToString());
+                }
+            }
+            conn.Close();
+        }
+        public void carga()
+        {
+            
+        }
+        private void cmbDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string clave = cmbDepartamento.Text.ToString();
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(strCon);
+            try
+            {
+                conn.Open();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Imposible conectar con los datos");
+                foreach (SqlError err in ex.Errors)
+                {
+                    MessageBox.Show(err.Message);
+                }
+                return;
+            }
+            SqlDataReader lector = null;
+            string strComando = "SELECT dispositivo from incidencias WHERE departamento='" + clave + "'";
+            SqlCommand cmd = new SqlCommand(strComando, conn);
+            try
+            {
+                lector = cmd.ExecuteReader();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Error en consulta");
+                foreach (SqlError err in ex.Errors)
+                {
+                    MessageBox.Show(err.Message);
+                }
+                conn.Close();
+                return;
+            }
+
+            if (lector.HasRows)
+            {
+                while (lector.Read())
+                {
+                    cmbDispositivo.Items.Add(lector.GetValue(0).ToString());
+                }
+            }
+            conn.Close();
+        }
     }
+    
 }

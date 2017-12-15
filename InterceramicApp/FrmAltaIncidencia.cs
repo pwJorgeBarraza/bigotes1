@@ -28,7 +28,7 @@ namespace InterceramicApp
         }      
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (txtDescripcion.Text == ""|| txtDispositivo.Text == "")
@@ -45,11 +45,11 @@ namespace InterceramicApp
                 string tipo = "";
                 if (rdSoftware.Checked)
                 {
-                    tipo = "Software";
+                    tipo = "SOFTWARE";
                 }
                 if (rdHardware.Checked)
                 {
-                    tipo = "Hardware";
+                    tipo = "HARDWARE";
                 }
                 string estatus = "";
                 if (btnRegistrar.Enabled == true)
@@ -127,7 +127,7 @@ namespace InterceramicApp
         private void cmbUsuario_SelectedIndexChanged(object sender, EventArgs e)
         {
             string clave = cmbUsuario.SelectedItem.ToString();
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -175,7 +175,7 @@ namespace InterceramicApp
         public void cargaUsuario()
         {
             string clave = cmbUsuario.SelectedText.ToString();
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -223,7 +223,7 @@ namespace InterceramicApp
         public void CargaEquipo()
         {
             string departamento = txtDepartamento.Text.ToString(); 
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -294,6 +294,11 @@ namespace InterceramicApp
         }
 
         private void mcFecha_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void rdHardware_CheckedChanged(object sender, EventArgs e)
         {
 
         }

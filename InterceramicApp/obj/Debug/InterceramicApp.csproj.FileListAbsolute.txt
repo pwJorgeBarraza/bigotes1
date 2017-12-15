@@ -100,7 +100,6 @@ C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicA
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmAsignarIncidencia.resources
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmConsultaUsuarios.resources
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmDiagnostico.resources
-C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmEvaluar_tecnico.resources
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmLiberarIncidencia.resources
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmMostrarIncidencias.resources
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmRFC.resources
@@ -111,7 +110,6 @@ C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\RdlCompile.ca
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\RdlCompile.compiled
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmMuestraCatalogo.resources
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmEvaluacion.resources
-C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.csprojResolveAssemblyReference.cache
 C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\InterceramicApp.exe.config
 C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\InterceramicApp.exe
 C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\InterceramicApp.pdb
@@ -149,3 +147,5 @@ C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\RdlCompil
 C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\RdlCompile.compiled
 C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.exe
 C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.pdb
+C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmCab.resources
+C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.csprojResolveAssemblyReference.cache

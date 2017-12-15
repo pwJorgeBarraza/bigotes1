@@ -59,6 +59,7 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.evaluarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incidenciaToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cABToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,11 +73,12 @@
             this.asignarToolStripMenuItem,
             this.diagnosticarToolStripMenuItem,
             this.liberarIncidenciaToolStripMenuItem,
-            this.consultasToolStripMenuItem,
+            this.evaluarToolStripMenuItem,
             this.toolStripMenuItem1,
             this.solicitudesToolStripMenuItem,
-            this.acercaDeToolStripMenuItem,
-            this.evaluarToolStripMenuItem});
+            this.cABToolStripMenuItem,
+            this.consultasToolStripMenuItem,
+            this.acercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1001, 24);
@@ -185,7 +187,7 @@
             this.asignadasToolStripMenuItem,
             this.liberadasToolStripMenuItem});
             this.porMesToolStripMenuItem.Name = "porMesToolStripMenuItem";
-            this.porMesToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.porMesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.porMesToolStripMenuItem.Text = "Incidencias";
             // 
             // porMesToolStripMenuItem1
@@ -221,7 +223,7 @@
             this.administradoresToolStripMenuItem,
             this.usuariosToolStripMenuItem});
             this.porAñoToolStripMenuItem.Name = "porAñoToolStripMenuItem";
-            this.porAñoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.porAñoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.porAñoToolStripMenuItem.Text = "Usuarios";
             this.porAñoToolStripMenuItem.Click += new System.EventHandler(this.porAñoToolStripMenuItem_Click);
             // 
@@ -255,7 +257,7 @@
             this.catalogoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.incidenciasToolStripMenuItem1});
             this.catalogoToolStripMenuItem.Name = "catalogoToolStripMenuItem";
-            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.catalogoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.catalogoToolStripMenuItem.Text = "Catalogo";
             // 
             // incidenciasToolStripMenuItem1
@@ -306,6 +308,13 @@
             this.incidenciaToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
             this.incidenciaToolStripMenuItem3.Text = "Incidencia";
             this.incidenciaToolStripMenuItem3.Click += new System.EventHandler(this.incidenciaToolStripMenuItem3_Click);
+            // 
+            // cABToolStripMenuItem
+            // 
+            this.cABToolStripMenuItem.Name = "cABToolStripMenuItem";
+            this.cABToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.cABToolStripMenuItem.Text = "CAB";
+            this.cABToolStripMenuItem.Click += new System.EventHandler(this.cABToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -359,5 +368,6 @@
         private System.Windows.Forms.ToolStripMenuItem catalogoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem evaluarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem incidenciaToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem cABToolStripMenuItem;
     }
 }

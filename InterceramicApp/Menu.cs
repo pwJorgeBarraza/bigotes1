@@ -122,5 +122,11 @@ namespace InterceramicApp
             frmEvaluacion eva = new frmEvaluacion();
             eva.Show();
         }
+
+        private void cABToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCab cab = new frmCab();
+            cab.Show();
+        }
     }
 }

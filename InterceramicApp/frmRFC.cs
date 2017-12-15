@@ -29,11 +29,7 @@ namespace InterceramicApp
         public void cargaUsuario()
         {
             string clave = cmbUsuario.SelectedText.ToString();
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -82,11 +78,7 @@ namespace InterceramicApp
         private void cmbUsuario_SelectedIndexChanged(object sender, EventArgs e)
         {
             string clave = cmbUsuario.SelectedItem.ToString();
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -135,11 +127,7 @@ namespace InterceramicApp
         private void btnEnviar_Click(object sender, EventArgs e)
         {
      
-<<<<<<< HEAD
-        string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
         string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
         //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
         SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (txtDepartamento.Text == "" || cmbUsuario.SelectedIndex <= 0 ||txtFecha.Text == "" || txtDescripcion.Text == "")

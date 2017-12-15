@@ -26,10 +26,9 @@ namespace InterceramicApp
 
         private void frmDiagnostico_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             string clave = cmbClave.SelectedIndex.ToString();
 
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (conn == null)
@@ -52,19 +51,12 @@ namespace InterceramicApp
                 }
             }
             conn.Close();
-=======
-
->>>>>>> master
         }
 
         private void cmbClave_SelectedIndexChanged(object sender, EventArgs e)
         {
             string clave = cmbClave.Text.ToString();
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -81,11 +73,7 @@ namespace InterceramicApp
                 return;
             }
             SqlDataReader lector = null;
-<<<<<<< HEAD
             string strComando = "SELECT descripcion, tecnico from incidencias WHERE incidenciaID ='" + clave + "'";
-=======
-            string strComando = "SELECT descripcion, usuario from incidencias WHERE incidenciaID ='" + clave + "'";
->>>>>>> master
             SqlCommand cmd = new SqlCommand(strComando, conn);
             try
             {
@@ -107,27 +95,21 @@ namespace InterceramicApp
             {
                 while (lector.Read())
                 {
-<<<<<<< HEAD
                     txtTecnico.Text = lector.GetValue(1).ToString();
                     txtDescripcion.Text = lector.GetValue(0).ToString();
-=======
-                    txtTecnico.Text = lector.GetValue(0).ToString();
-                    txtDescripcion.Text = lector.GetValue(1).ToString();
->>>>>>> master
                 }
             }
             conn.Close();
         }
         public void CargaUsuario()
         {
-<<<<<<< HEAD
            
         }
         private void btnDiagnosticar_Click(object sender, EventArgs e)
         {
 
             string clave = cmbClave.Text.ToString();
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (txtTiempo.Text == "")
@@ -172,37 +154,6 @@ namespace InterceramicApp
         }
 
         private void txtTiempo_TextChanged(object sender, EventArgs e)
-=======
-            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
-            //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-            SqlConnection conn = UsoDB.ConectaBD(strCon);
-            if (conn == null)
-            {
-                MessageBox.Show("Imposible Conectar");
-                return;
-            }
-            string strComando = "select usuarioID from usuarios where Tipo='T'";
-
-            SqlDataReader lector = UsoDB.Consulta(strComando, conn);
-            if (lector == null)
-            {
-                MessageBox.Show("Error En La Consulta");
-                conn.Close();
-                return;
-            }
-            if (lector.HasRows)
-            {
-
-
-                while (lector.Read())
-                {
-                    cmbClave.Items.Add(lector.GetValue(0).ToString());
-                }
-            }
-            conn.Close();
-        }
-        private void btnDiagnosticar_Click(object sender, EventArgs e)
->>>>>>> master
         {
 
         }

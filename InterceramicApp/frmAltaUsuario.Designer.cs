@@ -49,10 +49,7 @@
             this.rdAdmin = new System.Windows.Forms.RadioButton();
             this.lblDepartamento = new System.Windows.Forms.Label();
             this.cmbDepartamento = new System.Windows.Forms.ComboBox();
-<<<<<<< HEAD
             this.rbCab = new System.Windows.Forms.RadioButton();
-=======
->>>>>>> master
             ((System.ComponentModel.ISupportInitialize)(this.pbInterceramic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.grpTipo.SuspendLayout();
@@ -188,21 +185,14 @@
             // 
             // grpTipo
             // 
-<<<<<<< HEAD
             this.grpTipo.Controls.Add(this.rbCab);
-=======
->>>>>>> master
             this.grpTipo.Controls.Add(this.rdUsuario);
             this.grpTipo.Controls.Add(this.rdTecnico);
             this.grpTipo.Controls.Add(this.rdAdmin);
             this.grpTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpTipo.Location = new System.Drawing.Point(398, 235);
             this.grpTipo.Name = "grpTipo";
-<<<<<<< HEAD
             this.grpTipo.Size = new System.Drawing.Size(200, 151);
-=======
-            this.grpTipo.Size = new System.Drawing.Size(200, 125);
->>>>>>> master
             this.grpTipo.TabIndex = 12;
             this.grpTipo.TabStop = false;
             this.grpTipo.Text = "TIPO DE USUARIO";
@@ -259,7 +249,6 @@
             this.cmbDepartamento.TabIndex = 14;
             this.cmbDepartamento.SelectedIndexChanged += new System.EventHandler(this.cmbDepartamento_SelectedIndexChanged);
             // 
-<<<<<<< HEAD
             // rbCab
             // 
             this.rbCab.AutoSize = true;
@@ -271,8 +260,6 @@
             this.rbCab.Text = "CAB";
             this.rbCab.UseVisualStyleBackColor = true;
             // 
-=======
->>>>>>> master
             // frmAltaUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,9 +314,6 @@
         private System.Windows.Forms.RadioButton rdUsuario;
         private System.Windows.Forms.ComboBox cmbDepartamento;
         private System.Windows.Forms.Label lblDepartamento;
-<<<<<<< HEAD
         private System.Windows.Forms.RadioButton rbCab;
-=======
->>>>>>> master
     }
 }

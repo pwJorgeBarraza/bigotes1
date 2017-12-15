@@ -15,7 +15,22 @@ namespace InterceramicApp
         public Menu()
         {
             InitializeComponent();
-            
+            if (Interceramic.tipoCab)
+            {
+                altasToolStripMenuItem.Visible = false;
+            }
+            else if (Interceramic.tipoTecnico)
+            {
+                altasToolStripMenuItem.Visible = false;
+            }
+            else if (Interceramic.tipoAdministrador)
+            {
+                altasToolStripMenuItem.Visible = false;
+            }
+            else if (Interceramic.tipoUsuario)
+            {
+                altasToolStripMenuItem.Visible = false;
+            }
         }
 
         private void porAñoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,7 +104,6 @@ namespace InterceramicApp
             frmDiagnostico di = new frmDiagnostico();
             di.Show();
         }
-<<<<<<< HEAD
 
         private void incidenciasToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -108,7 +122,5 @@ namespace InterceramicApp
             frmEvaluacion eva = new frmEvaluacion();
             eva.Show();
         }
-=======
->>>>>>> master
     }
 }

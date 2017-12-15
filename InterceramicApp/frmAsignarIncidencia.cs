@@ -23,11 +23,7 @@ namespace InterceramicApp
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             string clave = cmbClave.Text.ToString();
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -76,12 +72,7 @@ namespace InterceramicApp
         private void frmAsignarIncidencia_Load(object sender, EventArgs e)
         {
             string clave = cmbClave.SelectedIndex.ToString();
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
-
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (conn == null)
@@ -108,13 +99,8 @@ namespace InterceramicApp
 
         private void cmbClaveUsuario_SelectedIndexChanged(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             string claveUsuario = cmbClaveUsuario.Text.ToString();
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
-            string claveUsuario = cmbClaveUsuario.SelectedItem.ToString();
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -161,11 +147,7 @@ namespace InterceramicApp
         }
         public void CargaUsuario()
         {   
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
            //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (conn == null)
@@ -197,11 +179,7 @@ namespace InterceramicApp
         private void btnAsignar_Click(object sender, EventArgs e)
         {
             string clave = cmbClave.SelectedText.ToString();
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (cmbClave.SelectedIndex < 0 || cmbClaveUsuario.SelectedIndex < 0 &&(rbBaja.Checked==false&&rdAlta.Checked==false&&rdMedia.Checked==false))
@@ -246,10 +224,7 @@ namespace InterceramicApp
                 }
                 MessageBox.Show("INCIDENCIA ASIGNADA", "INFORMACION", MessageBoxButtons.OK, MessageBoxIcon.Information); 
             conn.Close();
-<<<<<<< HEAD
                 limpiar();
-=======
->>>>>>> master
             }
         }
         private void btnCancelar_Click(object sender, EventArgs e)

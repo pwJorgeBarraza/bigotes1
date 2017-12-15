@@ -26,14 +26,7 @@ namespace InterceramicApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-<<<<<<< HEAD
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True")]
-=======
-        //[global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Se" +
-        //    "curity=True")]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Se" +
-            "curity=True")]
->>>>>>> master
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True")]
         public string InterceramicConnectionString {
             get {
                 return ((string)(this["InterceramicConnectionString"]));
@@ -43,20 +36,12 @@ namespace InterceramicApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-<<<<<<< HEAD
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True")]
-=======
-        //[global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Se" +
-        //    "curity=True")]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Se" +
-            "curity=True")]
->>>>>>> master
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True")]
         public string InterceramicConnectionString1 {
             get {
                 return ((string)(this["InterceramicConnectionString1"]));
             }
         }
-<<<<<<< HEAD
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -68,7 +53,5 @@ namespace InterceramicApp.Properties {
                 return ((string)(this["InterceramicConnectionString2"]));
             }
         }
-=======
->>>>>>> master
     }
 }

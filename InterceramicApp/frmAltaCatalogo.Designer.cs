@@ -151,6 +151,7 @@
             this.Controls.Add(this.txtIncidencia);
             this.Name = "frmAltaCatalogo";
             this.Text = "frmAltaCatalogo";
+            this.Load += new System.EventHandler(this.frmAltaCatalogo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

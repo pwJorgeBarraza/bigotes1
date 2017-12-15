@@ -30,7 +30,6 @@
         {
             this.cmbClave = new System.Windows.Forms.ComboBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-<<<<<<< HEAD
             this.mcFecha = new System.Windows.Forms.MonthCalendar();
             this.txtTecnico = new System.Windows.Forms.TextBox();
             this.btnLiberar = new System.Windows.Forms.Button();
@@ -39,17 +38,6 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-=======
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.txtTecnico = new System.Windows.Forms.TextBox();
-            this.btnLiberar = new System.Windows.Forms.Button();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.lblTecnico = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.mcFecha = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
->>>>>>> master
             this.SuspendLayout();
             // 
             // cmbClave
@@ -71,19 +59,11 @@
             this.txtDescripcion.Size = new System.Drawing.Size(308, 268);
             this.txtDescripcion.TabIndex = 1;
             // 
-<<<<<<< HEAD
             // mcFecha
             // 
             this.mcFecha.Location = new System.Drawing.Point(348, 50);
             this.mcFecha.Name = "mcFecha";
             this.mcFecha.TabIndex = 2;
-=======
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Location = new System.Drawing.Point(348, 50);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 2;
->>>>>>> master
             // 
             // txtTecnico
             // 
@@ -101,10 +81,7 @@
             this.btnLiberar.TabIndex = 5;
             this.btnLiberar.Text = "Liberar";
             this.btnLiberar.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
             this.btnLiberar.Click += new System.EventHandler(this.btnLiberar_Click);
-=======
->>>>>>> master
             // 
             // lblNumero
             // 
@@ -115,7 +92,6 @@
             this.lblNumero.TabIndex = 6;
             this.lblNumero.Text = "Clave De La Incidencia:";
             // 
-<<<<<<< HEAD
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
@@ -124,16 +100,6 @@
             this.lblUsuario.Size = new System.Drawing.Size(105, 13);
             this.lblUsuario.TabIndex = 7;
             this.lblUsuario.Text = "Nombre Del Usuario:";
-=======
-            // lblTecnico
-            // 
-            this.lblTecnico.AutoSize = true;
-            this.lblTecnico.Location = new System.Drawing.Point(12, 74);
-            this.lblTecnico.Name = "lblTecnico";
-            this.lblTecnico.Size = new System.Drawing.Size(108, 13);
-            this.lblTecnico.TabIndex = 7;
-            this.lblTecnico.Text = "Nombre Del Técnico:";
->>>>>>> master
             // 
             // lblDescripcion
             // 
@@ -144,7 +110,6 @@
             this.lblDescripcion.TabIndex = 8;
             this.lblDescripcion.Text = "Descripción De La Incidencia:";
             // 
-<<<<<<< HEAD
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
@@ -153,16 +118,6 @@
             this.lblFecha.Size = new System.Drawing.Size(109, 13);
             this.lblFecha.TabIndex = 10;
             this.lblFecha.Text = "Fecha De Liberación:";
-=======
-            // mcFecha
-            // 
-            this.mcFecha.AutoSize = true;
-            this.mcFecha.Location = new System.Drawing.Point(345, 34);
-            this.mcFecha.Name = "mcFecha";
-            this.mcFecha.Size = new System.Drawing.Size(109, 13);
-            this.mcFecha.TabIndex = 10;
-            this.mcFecha.Text = "Fecha De Liberación:";
->>>>>>> master
             // 
             // btnCancelar
             // 
@@ -173,25 +128,11 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
-=======
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(437, 346);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrar.TabIndex = 12;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
->>>>>>> master
             // frmLiberarIncidencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 453);
-<<<<<<< HEAD
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblDescripcion);
@@ -200,17 +141,6 @@
             this.Controls.Add(this.btnLiberar);
             this.Controls.Add(this.txtTecnico);
             this.Controls.Add(this.mcFecha);
-=======
-            this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.mcFecha);
-            this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.lblTecnico);
-            this.Controls.Add(this.lblNumero);
-            this.Controls.Add(this.btnLiberar);
-            this.Controls.Add(this.txtTecnico);
-            this.Controls.Add(this.monthCalendar1);
->>>>>>> master
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.cmbClave);
             this.Name = "frmLiberarIncidencia";
@@ -225,7 +155,6 @@
 
         private System.Windows.Forms.ComboBox cmbClave;
         private System.Windows.Forms.TextBox txtDescripcion;
-<<<<<<< HEAD
         private System.Windows.Forms.MonthCalendar mcFecha;
         private System.Windows.Forms.TextBox txtTecnico;
         private System.Windows.Forms.Button btnLiberar;
@@ -234,16 +163,5 @@
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Button btnCancelar;
-=======
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.TextBox txtTecnico;
-        private System.Windows.Forms.Button btnLiberar;
-        private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.Label lblTecnico;
-        private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.Label mcFecha;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnCerrar;
->>>>>>> master
     }
 }

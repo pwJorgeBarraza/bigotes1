@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-<<<<<<< HEAD
             this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.InterceramicDataSet1 = new InterceramicApp.InterceramicDataSet1();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
@@ -54,16 +53,6 @@
             this.InterceramicDataSet1.DataSetName = "InterceramicDataSet1";
             this.InterceramicDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-=======
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.InterceramicDataSet1 = new InterceramicApp.InterceramicDataSet1();
-            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usuariosTableAdapter = new InterceramicApp.InterceramicDataSet1TableAdapters.usuariosTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.InterceramicDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
-            this.SuspendLayout();
-            // 
->>>>>>> master
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -76,7 +65,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(1141, 552);
             this.reportViewer1.TabIndex = 0;
             // 
-<<<<<<< HEAD
             // usuariosTableAdapter
             // 
             this.usuariosTableAdapter.ClearBeforeFill = true;
@@ -94,21 +82,6 @@
             // catalogoTableAdapter
             // 
             this.catalogoTableAdapter.ClearBeforeFill = true;
-=======
-            // InterceramicDataSet1
-            // 
-            this.InterceramicDataSet1.DataSetName = "InterceramicDataSet1";
-            this.InterceramicDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usuariosBindingSource
-            // 
-            this.usuariosBindingSource.DataMember = "usuarios";
-            this.usuariosBindingSource.DataSource = this.InterceramicDataSet1;
-            // 
-            // usuariosTableAdapter
-            // 
-            this.usuariosTableAdapter.ClearBeforeFill = true;
->>>>>>> master
             // 
             // frmConsultaUsuarios
             // 
@@ -119,15 +92,10 @@
             this.Name = "frmConsultaUsuarios";
             this.Text = "frmConsultaUsuarios";
             this.Load += new System.EventHandler(this.frmConsultaUsuarios_Load);
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InterceramicDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InterceramicDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogoBindingSource)).EndInit();
-=======
-            ((System.ComponentModel.ISupportInitialize)(this.InterceramicDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
->>>>>>> master
             this.ResumeLayout(false);
 
         }
@@ -138,11 +106,8 @@
         private System.Windows.Forms.BindingSource usuariosBindingSource;
         private InterceramicDataSet1 InterceramicDataSet1;
         private InterceramicDataSet1TableAdapters.usuariosTableAdapter usuariosTableAdapter;
-<<<<<<< HEAD
         private System.Windows.Forms.BindingSource catalogoBindingSource;
         private InterceramicDataSet2 InterceramicDataSet2;
         private InterceramicDataSet2TableAdapters.catalogoTableAdapter catalogoTableAdapter;
-=======
->>>>>>> master
     }
 }

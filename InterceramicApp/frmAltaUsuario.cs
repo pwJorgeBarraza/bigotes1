@@ -44,11 +44,7 @@ namespace InterceramicApp
         public bool BuscaUSuario(string user)
         {
             bool bandera = false;
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (conn == null)
@@ -82,11 +78,7 @@ namespace InterceramicApp
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (txtNombre.Text == "" || txtNombreUsuario.Text == "" || txtClave.Text == "" || txtEspecialidad.Text == ""||cmbDepartamento.SelectedIndex<=0)
@@ -124,14 +116,10 @@ namespace InterceramicApp
                     {
                         tipo = "U";
                     }
-<<<<<<< HEAD
                     if (rbCab.Checked)
                     {
                         tipo = "C";
                     }
-=======
-                    
->>>>>>> master
                     string strComando = "insert into usuarios(nombre, usuario, contrasena, tipo, especialidad,departamento)";
                     strComando += "values (@nombre, @usuario, @contrasena, @tipo, @especialidad,@departamento)";
                     SqlCommand cmd = new SqlCommand(strComando, conn);
@@ -209,11 +197,7 @@ namespace InterceramicApp
         private void frmAltaUsuario_Load(object sender, EventArgs e)
         {
             //string clave = cmbClave.SelectedItem.ToString();
-<<<<<<< HEAD
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-=======
             string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
->>>>>>> master
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (conn == null)

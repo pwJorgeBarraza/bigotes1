@@ -38,10 +38,7 @@
             this.btnDiagnosticar = new System.Windows.Forms.Button();
             this.txtTecnico = new System.Windows.Forms.TextBox();
             this.lblTecnico = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.btnCatalogo = new System.Windows.Forms.Button();
-=======
->>>>>>> master
             ((System.ComponentModel.ISupportInitialize)(this.interceramicDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +76,6 @@
             // 
             // txtTiempo
             // 
-<<<<<<< HEAD
             this.txtTiempo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtTiempo.Location = new System.Drawing.Point(165, 45);
             this.txtTiempo.MaxLength = 15;
@@ -87,12 +83,6 @@
             this.txtTiempo.Size = new System.Drawing.Size(138, 20);
             this.txtTiempo.TabIndex = 3;
             this.txtTiempo.TextChanged += new System.EventHandler(this.txtTiempo_TextChanged);
-=======
-            this.txtTiempo.Location = new System.Drawing.Point(165, 45);
-            this.txtTiempo.Name = "txtTiempo";
-            this.txtTiempo.Size = new System.Drawing.Size(138, 20);
-            this.txtTiempo.TabIndex = 3;
->>>>>>> master
             // 
             // lblTiempo
             // 
@@ -114,11 +104,7 @@
             // 
             // btnDiagnosticar
             // 
-<<<<<<< HEAD
             this.btnDiagnosticar.Location = new System.Drawing.Point(527, 163);
-=======
-            this.btnDiagnosticar.Location = new System.Drawing.Point(527, 197);
->>>>>>> master
             this.btnDiagnosticar.Name = "btnDiagnosticar";
             this.btnDiagnosticar.Size = new System.Drawing.Size(75, 23);
             this.btnDiagnosticar.TabIndex = 6;
@@ -142,7 +128,6 @@
             this.lblTecnico.TabIndex = 8;
             this.lblTecnico.Text = "Técnico";
             // 
-<<<<<<< HEAD
             // btnCatalogo
             // 
             this.btnCatalogo.Location = new System.Drawing.Point(527, 221);
@@ -153,17 +138,12 @@
             this.btnCatalogo.UseVisualStyleBackColor = true;
             this.btnCatalogo.Click += new System.EventHandler(this.btnCatalogo_Click);
             // 
-=======
->>>>>>> master
             // frmDiagnostico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 362);
-<<<<<<< HEAD
             this.Controls.Add(this.btnCatalogo);
-=======
->>>>>>> master
             this.Controls.Add(this.lblTecnico);
             this.Controls.Add(this.txtTecnico);
             this.Controls.Add(this.btnDiagnosticar);
@@ -194,9 +174,6 @@
         private System.Windows.Forms.Button btnDiagnosticar;
         private System.Windows.Forms.TextBox txtTecnico;
         private System.Windows.Forms.Label lblTecnico;
-<<<<<<< HEAD
         private System.Windows.Forms.Button btnCatalogo;
-=======
->>>>>>> master
     }
 }

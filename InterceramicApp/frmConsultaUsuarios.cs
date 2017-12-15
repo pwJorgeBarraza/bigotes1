@@ -19,11 +19,7 @@ namespace InterceramicApp
 
         private void frmConsultaUsuarios_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
           
-=======
-            // TODO: This line of code loads data into the 'InterceramicDataSet1.usuarios' table. You can move, or remove it, as needed.
->>>>>>> master
             this.usuariosTableAdapter.Fill(this.InterceramicDataSet1.usuarios);
 
             this.reportViewer1.RefreshReport();

@@ -20,8 +20,8 @@ namespace InterceramicApp
 
         private void btnAlta_Click(object sender, EventArgs e)
         {
-            //string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            //string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (txtIncidencia.Text == "" || txtSolucion1.Text == "" || txtTiempo.Text == "")
             {
@@ -63,5 +63,10 @@ namespace InterceramicApp
                 txtTiempo.Text = "";
                 txtSolucion2.Text = "";
                }
+
+        private void frmAltaCatalogo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

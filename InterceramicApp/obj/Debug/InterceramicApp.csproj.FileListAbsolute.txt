@@ -86,7 +86,6 @@ C:\Users\jofer\Desktop\Proyecto Bigotes Antrax\InterceramicApp\InterceramicApp\o
 C:\Users\jofer\Desktop\Proyecto Bigotes Antrax\InterceramicApp\InterceramicApp\obj\Debug\RdlCompile.cache
 C:\Users\jofer\Desktop\Proyecto Bigotes Antrax\InterceramicApp\InterceramicApp\obj\Debug\RdlCompile.compiled
 C:\Users\jofer\Desktop\Proyecto Bigotes Antrax\InterceramicApp\InterceramicApp\obj\Debug\InterceramicApp.frmDiagnostico.resources
-<<<<<<< HEAD
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\bin\Debug\InterceramicApp.exe.config
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.exe
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.pdb
@@ -113,5 +112,40 @@ C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\RdlCompile.co
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmMuestraCatalogo.resources
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmEvaluacion.resources
 C:\Users\nomar\Desktop\Bigotes1\bigotes1\InterceramicApp\obj\Debug\InterceramicApp.csprojResolveAssemblyReference.cache
-=======
->>>>>>> master
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\InterceramicApp.exe.config
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\InterceramicApp.exe
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\InterceramicApp.pdb
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.csprojResolveAssemblyReference.cache
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.Interceramic.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmAltaCatalogo.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmAltaEquipo.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.FrmAltaIncidencia.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmAltaUsuario.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmAsignarIncidencia.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmConsultaUsuarios.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmDiagnostico.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmEvaluacion.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmEvaluar_tecnico.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmLiberarIncidencia.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmMostrarIncidencias.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmMuestraCatalogo.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.frmRFC.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.Menu.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.Properties.Resources.resources
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.csproj.GenerateResource.Cache
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\RdlCompile.cache
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\RdlCompile.compiled
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.exe
+C:\Users\jofer\Desktop\BigotesRamon\Bigotes1\InterceramicApp\obj\Debug\InterceramicApp.pdb

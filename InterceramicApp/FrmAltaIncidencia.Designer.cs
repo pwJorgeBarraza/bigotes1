@@ -180,10 +180,7 @@
             this.mcFecha.Location = new System.Drawing.Point(563, 175);
             this.mcFecha.Name = "mcFecha";
             this.mcFecha.TabIndex = 15;
-<<<<<<< HEAD
             this.mcFecha.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.mcFecha_DateChanged);
-=======
->>>>>>> master
             // 
             // lblEquipo
             // 

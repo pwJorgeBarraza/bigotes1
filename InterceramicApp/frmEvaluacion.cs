@@ -21,7 +21,7 @@ namespace InterceramicApp
         private void cmbClave_SelectedIndexChanged(object sender, EventArgs e)
         {
             string clave = cmbClave.Text.ToString();
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = new SqlConnection(strCon);
             try
@@ -74,7 +74,7 @@ namespace InterceramicApp
         private void frmEvaluacion_Load(object sender, EventArgs e)
         {
             string clave = cmbClave.SelectedIndex.ToString();
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (conn == null)
@@ -107,7 +107,7 @@ namespace InterceramicApp
         private void btnEvaluar_Click(object sender, EventArgs e)
         {
             string clave = cmbClave.SelectedText.ToString();
-            string strCon = "Data Source=DESKTOP-5J98UPE\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
+            string strCon = "Data Source=JORGE-HPDV5;Initial Catalog=Interceramic;Integrated Security=True";
             //string strCon = "Data Source=DESKTOP-9D96CMH\\SQLEXPRESS;Initial Catalog=Interceramic;Integrated Security=True";
             SqlConnection conn = UsoDB.ConectaBD(strCon);
             if (cmbClave.SelectedIndex < 0 || txtDescripcion.Text == "" || txtTecnico.Text == "" || txtFechaF.Text == "" | txtFechaI.Text == "" || txtTiempo.Text == "" || txtTiempoR.Text == "" || txtUsuario.Text == "")

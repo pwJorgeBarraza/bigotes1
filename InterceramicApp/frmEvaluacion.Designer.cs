@@ -54,6 +54,12 @@
             this.lblQ4 = new System.Windows.Forms.Label();
             this.rdSi2 = new System.Windows.Forms.RadioButton();
             this.rdNo2 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbClave
@@ -201,7 +207,7 @@
             // rdGrosero
             // 
             this.rdGrosero.AutoSize = true;
-            this.rdGrosero.Location = new System.Drawing.Point(452, 186);
+            this.rdGrosero.Location = new System.Drawing.Point(80, 53);
             this.rdGrosero.Name = "rdGrosero";
             this.rdGrosero.Size = new System.Drawing.Size(62, 17);
             this.rdGrosero.TabIndex = 38;
@@ -212,7 +218,7 @@
             // rdMalo
             // 
             this.rdMalo.AutoSize = true;
-            this.rdMalo.Location = new System.Drawing.Point(454, 55);
+            this.rdMalo.Location = new System.Drawing.Point(79, 50);
             this.rdMalo.Name = "rdMalo";
             this.rdMalo.Size = new System.Drawing.Size(48, 17);
             this.rdMalo.TabIndex = 32;
@@ -224,7 +230,7 @@
             // 
             this.lblQ1.AutoSize = true;
             this.lblQ1.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.lblQ1.Location = new System.Drawing.Point(381, 24);
+            this.lblQ1.Location = new System.Drawing.Point(6, 19);
             this.lblQ1.Name = "lblQ1";
             this.lblQ1.Size = new System.Drawing.Size(247, 14);
             this.lblQ1.TabIndex = 30;
@@ -233,7 +239,7 @@
             // rdAtento
             // 
             this.rdAtento.AutoSize = true;
-            this.rdAtento.Location = new System.Drawing.Point(376, 186);
+            this.rdAtento.Location = new System.Drawing.Point(4, 53);
             this.rdAtento.Name = "rdAtento";
             this.rdAtento.Size = new System.Drawing.Size(56, 17);
             this.rdAtento.TabIndex = 37;
@@ -244,7 +250,7 @@
             // rdBueno
             // 
             this.rdBueno.AutoSize = true;
-            this.rdBueno.Location = new System.Drawing.Point(381, 53);
+            this.rdBueno.Location = new System.Drawing.Point(6, 48);
             this.rdBueno.Name = "rdBueno";
             this.rdBueno.Size = new System.Drawing.Size(56, 17);
             this.rdBueno.TabIndex = 31;
@@ -256,7 +262,7 @@
             // 
             this.lblQ3.AutoSize = true;
             this.lblQ3.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.lblQ3.Location = new System.Drawing.Point(378, 86);
+            this.lblQ3.Location = new System.Drawing.Point(6, 16);
             this.lblQ3.Name = "lblQ3";
             this.lblQ3.Size = new System.Drawing.Size(230, 14);
             this.lblQ3.TabIndex = 33;
@@ -266,7 +272,7 @@
             // 
             this.lblQ4.AutoSize = true;
             this.lblQ4.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
-            this.lblQ4.Location = new System.Drawing.Point(378, 149);
+            this.lblQ4.Location = new System.Drawing.Point(6, 16);
             this.lblQ4.Name = "lblQ4";
             this.lblQ4.Size = new System.Drawing.Size(128, 14);
             this.lblQ4.TabIndex = 36;
@@ -275,7 +281,7 @@
             // rdSi2
             // 
             this.rdSi2.AutoSize = true;
-            this.rdSi2.Location = new System.Drawing.Point(379, 121);
+            this.rdSi2.Location = new System.Drawing.Point(7, 51);
             this.rdSi2.Name = "rdSi2";
             this.rdSi2.Size = new System.Drawing.Size(34, 17);
             this.rdSi2.TabIndex = 34;
@@ -286,7 +292,7 @@
             // rdNo2
             // 
             this.rdNo2.AutoSize = true;
-            this.rdNo2.Location = new System.Drawing.Point(452, 121);
+            this.rdNo2.Location = new System.Drawing.Point(80, 51);
             this.rdNo2.Name = "rdNo2";
             this.rdNo2.Size = new System.Drawing.Size(39, 17);
             this.rdNo2.TabIndex = 35;
@@ -294,20 +300,47 @@
             this.rdNo2.Text = "No";
             this.rdNo2.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblQ1);
+            this.groupBox1.Controls.Add(this.rdBueno);
+            this.groupBox1.Controls.Add(this.rdMalo);
+            this.groupBox1.Location = new System.Drawing.Point(376, 9);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(260, 74);
+            this.groupBox1.TabIndex = 39;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lblQ3);
+            this.groupBox2.Controls.Add(this.rdNo2);
+            this.groupBox2.Controls.Add(this.rdSi2);
+            this.groupBox2.Location = new System.Drawing.Point(376, 186);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(260, 80);
+            this.groupBox2.TabIndex = 40;
+            this.groupBox2.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.lblQ4);
+            this.groupBox3.Controls.Add(this.rdAtento);
+            this.groupBox3.Controls.Add(this.rdGrosero);
+            this.groupBox3.Location = new System.Drawing.Point(376, 97);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(260, 83);
+            this.groupBox3.TabIndex = 41;
+            this.groupBox3.TabStop = false;
+            // 
             // frmEvaluacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 384);
-            this.Controls.Add(this.rdGrosero);
-            this.Controls.Add(this.rdMalo);
-            this.Controls.Add(this.lblQ1);
-            this.Controls.Add(this.rdAtento);
-            this.Controls.Add(this.rdBueno);
-            this.Controls.Add(this.lblQ3);
-            this.Controls.Add(this.lblQ4);
-            this.Controls.Add(this.rdSi2);
-            this.Controls.Add(this.rdNo2);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnEvaluar);
             this.Controls.Add(this.lblTiempoUsado);
             this.Controls.Add(this.txtTiempoR);
@@ -328,6 +361,12 @@
             this.Name = "frmEvaluacion";
             this.Text = "frmEvaluacion";
             this.Load += new System.EventHandler(this.frmEvaluacion_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,5 +400,8 @@
         private System.Windows.Forms.Label lblQ4;
         private System.Windows.Forms.RadioButton rdSi2;
         private System.Windows.Forms.RadioButton rdNo2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
